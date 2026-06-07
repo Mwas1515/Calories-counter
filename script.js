@@ -52,7 +52,7 @@ function renderItems() {
         div.innerHTML = `
             <span>${item.name}</span>
             <span>${item.calories} kcal</span>
-            <button class="bg-red-500 text-white p-1 rounded" onclick="deleteItem(${index})">Delete</button>
+            <button class="bg-red-500 text-white p-2 rounded font-bold" onclick="deleteItem(${index})">Delete</button>
         `;
         itemList.appendChild(div);
         totalCalories += parseInt(item.calories, 10);
